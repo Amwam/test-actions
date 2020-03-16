@@ -1,0 +1,13 @@
+name: "Check Migrations"
+on:
+- pull_request
+
+jobs:
+  check_migration:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: codesuki/check-master-action@1.0.0
+      with:
+        path: "migrations"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
