@@ -1,6 +1,7 @@
 name: "Check Migrations"
 on:
   - pull_request
+  - push
 
 jobs:
   check_migration:
