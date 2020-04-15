@@ -7,7 +7,7 @@ jobs:
   production_review:
     runs-on: ubuntu-latest
     steps:
-      - uses: Naturalclar/issue-action@v1.0.0
+      - uses: Amwam/issue-comment-action@v1.0.0
         with:
           keywords: '["/test"]'
           labels: '["enhancement"]'
